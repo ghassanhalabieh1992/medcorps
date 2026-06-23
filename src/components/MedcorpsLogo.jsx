@@ -8,7 +8,13 @@ export default function MedcorpsLogo({ className = '' }) {
       src={LOGO_URL}
       alt="Medcorps Espaço da Saúde"
       className={`rounded-xl ${className}`}
-      style={{ imageRendering: 'auto' }}
+      style={{
+        imageRendering: 'crisp-edges',
+        backfaceVisibility: 'hidden',
+        WebkitBackfaceVisibility: 'hidden',
+        transform: 'translateZ(0)',
+      }}
+      decoding="async"
     />
   );
 }
