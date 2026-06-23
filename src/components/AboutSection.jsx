@@ -11,7 +11,7 @@ const STATS = [
 
 export default function AboutSection() {
   return (
-    <section id="sobre" className="py-24 lg:py-32 relative overflow-hidden">
+    <section id="sobre" className="scroll-mt-20 py-24 lg:py-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Image */}

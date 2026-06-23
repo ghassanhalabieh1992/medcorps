@@ -74,7 +74,7 @@ const SPECIALTIES = [
 
 export default function SpecialtiesSection() {
   return (
-    <section id="especialidades" className="py-24 lg:py-32 bg-white">
+    <section id="especialidades" className="scroll-mt-20 py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

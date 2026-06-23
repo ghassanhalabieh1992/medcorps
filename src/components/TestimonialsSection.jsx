@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
   const testimonial = TESTIMONIALS[current];
 
   return (
-    <section id="depoimentos" className="py-24 lg:py-32 bg-white">
+    <section id="depoimentos" className="scroll-mt-20 py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

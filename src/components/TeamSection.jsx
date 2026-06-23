@@ -24,7 +24,7 @@ const TEAM = [
 
 export default function TeamSection() {
   return (
-    <section id="equipe" className="py-24 lg:py-32">
+    <section id="equipe" className="scroll-mt-20 py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
