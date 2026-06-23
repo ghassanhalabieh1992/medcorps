@@ -22,6 +22,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const handleMobileNav = (e, href) => {
+    e.preventDefault();
+    const id = href.slice(1);
+    setMobileOpen(false);
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }, 300);
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -95,7 +104,7 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={(e) => handleMobileNav(e, link.href)}
                   className="text-foreground font-medium py-2 border-b border-border/30 last:border-0"
                 >
                   {link.label}
