@@ -1,19 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Stethoscope, Brain, Baby, Smile, HeartPulse, Pill
+  Stethoscope, Brain, Baby, Smile, HeartPulse, Sparkles, Zap, Star, Activity, Hand, Leaf, Eye, Flower
 } from 'lucide-react';
 
 const SPECIALTIES = [
   {
-    icon: Pill,
-    name: 'Acupuntura Médica',
-    description: 'Tratamento complementar com técnicas milenares para alívio de dores e promoção do equilíbrio corporal.',
-  },
-  {
-    icon: HeartPulse,
-    name: 'Endocrinologia',
-    description: 'Diagnóstico e tratamento de distúrbios hormonais, tireoide, diabetes e metabolismo.',
+    icon: Sparkles,
+    name: 'Dermatologia',
+    description: 'Diagnóstico e tratamento de doenças da pele, cabelos e unhas com tecnologia avançada.',
   },
   {
     icon: Baby,
@@ -21,19 +16,59 @@ const SPECIALTIES = [
     description: 'Acompanhamento integral da saúde feminina, pré-natal e saúde reprodutiva.',
   },
   {
-    icon: Smile,
-    name: 'Odontologia',
-    description: 'Cuidados com a saúde bucal, tratamentos estéticos e reabilitação oral.',
+    icon: Brain,
+    name: 'Psiquiatria',
+    description: 'Tratamento especializado de transtornos mentais com abordagem humanizada.',
   },
   {
-    icon: Brain,
+    icon: HeartPulse,
+    name: 'Nutrologia',
+    description: 'Prevenção e tratamento de doenças relacionadas à alimentação e metabolismo.',
+  },
+  {
+    icon: Stethoscope,
+    name: 'Clínica Médica',
+    description: 'Avaliação clínica geral, diagnóstico e acompanhamento da saúde do adulto.',
+  },
+  {
+    icon: Flower,
+    name: 'Homeopatia',
+    description: 'Tratamento com medicamentos homeopáticos visando o equilíbrio natural do organismo.',
+  },
+  {
+    icon: Zap,
+    name: 'Acupuntura',
+    description: 'Técnica milenar chinesa para alívio de dores e restabelecimento do equilíbrio energético.',
+  },
+  {
+    icon: Star,
+    name: 'Nutrição',
+    description: 'Orientação alimentar personalizada para promoção da saúde e qualidade de vida.',
+  },
+  {
+    icon: Smile,
     name: 'Psicologia',
     description: 'Suporte emocional e terapia para o bem-estar mental e qualidade de vida.',
   },
   {
-    icon: Stethoscope,
-    name: 'Psiquiatria',
-    description: 'Tratamento especializado de transtornos mentais com abordagem humanizada.',
+    icon: Activity,
+    name: 'Fisioterapia Dermato-Funcional',
+    description: 'Tratamento de disfunções estéticas e funcionais da pele e tecidos corporais.',
+  },
+  {
+    icon: Hand,
+    name: 'Osteopatia',
+    description: 'Terapia manual para diagnóstico e tratamento de disfunções musculoesqueléticas.',
+  },
+  {
+    icon: Leaf,
+    name: 'Naturopatia e Tratamentos Integrativos',
+    description: 'Abordagem natural e holística integrando diversas terapias complementares.',
+  },
+  {
+    icon: Eye,
+    name: 'Hipnose Clínica',
+    description: 'Técnica terapêutica para tratamento de ansiedade, fobias, dores crônicas e dependências.',
   },
 ];
 
