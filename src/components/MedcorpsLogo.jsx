@@ -1,18 +1,16 @@
 import React from 'react';
 
 /**
- * MedcorpsLogo — SVG inline, transparent background.
- * Matches the official logo: a rotated bean shape with wavy S-split.
- *
- * variant: default = cream #EAE7D6 (for dark backgrounds)
- *          'green' = #2C5F2E (for light backgrounds)
- *          'dark'  = #002C3D (alternative dark)
- *          'light' = #F5F0E8 (for very dark backgrounds)
+ * MedcorpsLogo — uses the uploaded bean icon PNG above text.
+ * variant: default = cream text #EAE7D6 (dark backgrounds)
+ *          'green' = #2C5F2E text (light backgrounds)
+ *          'dark'  = #002C3D text
  */
+const BEAN_ICON = 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/5b0f178d0_medcorps_icon_only.png';
+
 export default function MedcorpsLogo({ className = '', variant }) {
   const fill = variant === 'green' ? '#2C5F2E'
              : variant === 'dark'  ? '#002C3D'
-             : variant === 'light' ? '#F5F0E8'
              :                       '#EAE7D6'; // default cream
 
   return (
@@ -23,30 +21,14 @@ export default function MedcorpsLogo({ className = '', variant }) {
       role="img"
       aria-label="Medcorps Espaço da Saúde"
     >
-      <defs>
-        <mask id="beanMask">
-          {/* Bean body — white = visible */}
-          <ellipse cx="0" cy="0" rx="74" ry="38" fill="white" />
-          {/* Wavy S-curve cut through center — black = transparent */}
-          <path
-            d="M -64,-5 C -38,-24 -5,-3 0,0 C 5,3 38,24 64,5"
-            stroke="black"
-            strokeWidth="15"
-            strokeLinecap="round"
-            fill="none"
-          />
-        </mask>
-      </defs>
-
-      {/* Rotated bean with mask */}
-      <g transform="translate(160, 74) rotate(-32)">
-        <ellipse
-          cx="0" cy="0"
-          rx="74" ry="38"
-          fill={fill}
-          mask="url(#beanMask)"
-        />
-      </g>
+      {/* Bean icon from uploaded file */}
+      <image
+        href={BEAN_ICON}
+        x="116"
+        y="14"
+        width="88"
+        height="88"
+      />
 
       {/* MEDCORPS — elegant serif */}
       <text
