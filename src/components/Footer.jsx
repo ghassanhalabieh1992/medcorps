@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Instagram } from 'lucide-react';
+import MedcorpsLogo from '@/components/MedcorpsLogo';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -10,11 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img
-              src="https://media.base44.com/images/public/user_68e3222dbad7e10957668295/502389993_.png"
-              alt="Medcorps"
-              className="h-16 w-auto brightness-200 mb-6"
-            />
+            <MedcorpsLogo variant="light" className="h-16 w-auto mb-6" />
             <p className="text-white/50 font-body text-sm leading-relaxed">
               Clínica Medcorps — Espaço da Saúde.<br />
               Cuidado multidisciplinar com excelência e acolhimento em Florianópolis.

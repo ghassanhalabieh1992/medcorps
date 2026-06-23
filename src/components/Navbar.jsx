@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import MedcorpsLogo from '@/components/MedcorpsLogo';
 
 const NAV_LINKS = [
   { label: 'Início', href: '#inicio' },
@@ -32,10 +33,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-3">
-            <img
-              src="https://media.base44.com/images/public/user_68e3222dbad7e10957668295/502389993_.png"
-              alt="Medcorps Espaço da Saúde"
+          <a href="#inicio" className="flex items-center">
+            <MedcorpsLogo
+              variant={scrolled ? 'green' : 'light'}
               className="h-14 w-auto"
             />
           </a>
