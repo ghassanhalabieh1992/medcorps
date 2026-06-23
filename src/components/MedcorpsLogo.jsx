@@ -25,9 +25,9 @@ export default function MedcorpsLogo({ className = '', variant = 'green' }) {
         <mask id="beanMask">
           {/* White = visible, black = cut out */}
           <ellipse cx="160" cy="72" rx="82" ry="56" fill="white" />
-          {/* Diagonal stripe cut */}
+          {/* Wavy diagonal stripe cut */}
           <path
-            d="M 68,100 L 242,44"
+            d="M 64,104 C 110,86 140,56 160,72 C 185,92 215,48 248,40"
             stroke="black"
             strokeWidth="20"
             strokeLinecap="butt"
