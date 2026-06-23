@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Mail, Instagram } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import MedcorpsLogo from '@/components/MedcorpsLogo';
 
@@ -62,10 +62,35 @@ export default function Navbar() {
           </nav>
 
           {/* CTA */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href="mailto:clinicamedcorps2021@gmail.com"
+              className="flex items-center justify-center w-9 h-9 rounded-full text-muted-foreground hover:text-foreground hover:bg-background transition-all duration-300"
+              title="Email"
+            >
+              <Mail className="w-4 h-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/clinicamedcorpsfloripa?igsh=MTlxNGRrZnp5YjhhZA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-9 h-9 rounded-full text-muted-foreground hover:text-foreground hover:bg-background transition-all duration-300"
+              title="Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a
+              href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-9 h-9 rounded-full text-muted-foreground hover:text-foreground hover:bg-background transition-all duration-300"
+              title="WhatsApp"
+            >
+              <Phone className="w-4 h-4" />
+            </a>
             <a
               href="tel:+5548999260111"
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors ml-1"
             >
               <Phone className="w-4 h-4" />
               (48) 99926-0111
@@ -110,6 +135,40 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <div className="flex items-center justify-center gap-5 pt-2 pb-1">
+                <a
+                  href="mailto:clinicamedcorps2021@gmail.com"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  title="Email"
+                >
+                  <Mail className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/clinicamedcorpsfloripa?igsh=MTlxNGRrZnp5YjhhZA=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  title="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  title="WhatsApp"
+                >
+                  <Phone className="w-5 h-5" />
+                </a>
+                <a
+                  href="tel:+5548999260111"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  title="Telefone"
+                >
+                  <Phone className="w-5 h-5" />
+                </a>
+              </div>
               <a
                 href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta."
                 target="_blank"

@@ -66,6 +66,20 @@ export default function ContactSection() {
             <div className="bg-white rounded-3xl p-8 border border-border/50">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                  <Mail className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-heading font-semibold text-foreground mb-1">Email</h3>
+                  <a href="mailto:clinicamedcorps2021@gmail.com" className="text-muted-foreground hover:text-primary transition-colors font-body">
+                    clinicamedcorps2021@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 border border-border/50">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
                   <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -87,7 +101,7 @@ export default function ContactSection() {
                 Agendar via WhatsApp
               </a>
               <a
-                href="https://www.instagram.com/clinicamedcorpsfloripa/"
+                href="https://www.instagram.com/clinicamedcorpsfloripa?igsh=MTlxNGRrZnp5YjhhZA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 border border-border px-6 py-4 rounded-full text-center font-medium text-foreground hover:bg-foreground hover:text-background transition-all duration-300 flex items-center justify-center gap-2"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Instagram } from 'lucide-react';
+import { MapPin, Phone, Instagram, Mail } from 'lucide-react';
 import MedcorpsLogo from '@/components/MedcorpsLogo';
 
 export default function Footer() {
@@ -52,9 +52,15 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-accent shrink-0" />
+                <a href="mailto:clinicamedcorps2021@gmail.com" className="text-white/50 hover:text-white transition-colors text-sm font-body">
+                  clinicamedcorps2021@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
                 <Instagram className="w-4 h-4 text-accent shrink-0" />
                 <a
-                  href="https://www.instagram.com/clinicamedcorpsfloripa/"
+                  href="https://www.instagram.com/clinicamedcorpsfloripa?igsh=MTlxNGRrZnp5YjhhZA=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/50 hover:text-white transition-colors text-sm font-body"
