@@ -35,7 +35,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#inicio" className="flex items-center">
             <MedcorpsLogo
-              variant={scrolled ? 'green' : 'light'}
+              variant={scrolled ? 'green' : undefined}
               className="h-14 w-auto"
             />
           </a>

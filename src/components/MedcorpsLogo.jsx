@@ -1,17 +1,19 @@
 import React from 'react';
 
 /**
- * MedcorpsLogo — SVG inline, transparent background
- * variant: 'green' (default) | 'light' (white, for dark backgrounds) | 'dark'
+ * MedcorpsLogo — SVG inline, transparent background.
+ * Matches the official logo: a rotated bean shape with wavy S-split.
+ *
+ * variant: default = cream #EAE7D6 (for dark backgrounds)
+ *          'green' = #2C5F2E (for light backgrounds)
+ *          'dark'  = #002C3D (alternative dark)
+ *          'light' = #F5F0E8 (for very dark backgrounds)
  */
-export default function MedcorpsLogo({ className = '', variant = 'green' }) {
-  const fill = variant === 'light' ? '#F5F0E8'
+export default function MedcorpsLogo({ className = '', variant }) {
+  const fill = variant === 'green' ? '#2C5F2E'
              : variant === 'dark'  ? '#002C3D'
-             :                       '#2C5F2E';
-
-  const bgCut = variant === 'light' ? '#002C3D'
-              : variant === 'dark'  ? '#F7F9FB'
-              :                       'transparent'; // will use SVG mask trick
+             : variant === 'light' ? '#F5F0E8'
+             :                       '#EAE7D6'; // default cream
 
   return (
     <svg
@@ -23,53 +25,52 @@ export default function MedcorpsLogo({ className = '', variant = 'green' }) {
     >
       <defs>
         <mask id="beanMask">
-          {/* White = visible, black = cut out */}
-          <ellipse cx="160" cy="72" rx="82" ry="56" fill="white" />
-          {/* Wavy diagonal stripe cut */}
+          {/* Bean body — white = visible */}
+          <ellipse cx="0" cy="0" rx="74" ry="38" fill="white" />
+          {/* Wavy S-curve cut through center — black = transparent */}
           <path
-            d="M 64,104 C 110,86 140,56 160,72 C 185,92 215,48 248,40"
+            d="M -64,-5 C -38,-24 -5,-3 0,0 C 5,3 38,24 64,5"
             stroke="black"
-            strokeWidth="20"
-            strokeLinecap="butt"
+            strokeWidth="15"
+            strokeLinecap="round"
+            fill="none"
           />
         </mask>
       </defs>
 
-      {/* Bean shape with diagonal stripe cut via mask */}
-      <ellipse
-        cx="160" cy="72"
-        rx="82" ry="56"
-        fill={fill}
-        mask="url(#beanMask)"
-      />
-      {/* Re-draw two solid halves to create the bean split look */}
-      <g mask="url(#beanMask)">
-        <ellipse cx="160" cy="72" rx="82" ry="56" fill={fill} />
+      {/* Rotated bean with mask */}
+      <g transform="translate(160, 74) rotate(-32)">
+        <ellipse
+          cx="0" cy="0"
+          rx="74" ry="38"
+          fill={fill}
+          mask="url(#beanMask)"
+        />
       </g>
 
-      {/* MEDCORPS */}
+      {/* MEDCORPS — elegant serif */}
       <text
         x="160"
-        y="162"
+        y="160"
         textAnchor="middle"
         fontFamily="Cormorant Garamond, Georgia, serif"
         fontWeight="500"
-        fontSize="42"
+        fontSize="40"
         letterSpacing="5"
         fill={fill}
       >
         MEDCORPS
       </text>
 
-      {/* ESPAÇO DA SAÚDE */}
+      {/* ESPAÇO DA SAÚDE — wide sans-serif */}
       <text
         x="160"
         y="185"
         textAnchor="middle"
         fontFamily="Inter, system-ui, sans-serif"
         fontWeight="300"
-        fontSize="11.5"
-        letterSpacing="5.5"
+        fontSize="11"
+        letterSpacing="6"
         fill={fill}
       >
         ESPAÇO DA SAÚDE

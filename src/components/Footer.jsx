@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <MedcorpsLogo variant="light" className="h-16 w-auto mb-6" />
+            <MedcorpsLogo className="h-16 w-auto mb-6" />
             <p className="text-white/50 font-body text-sm leading-relaxed">
               Clínica Medcorps — Espaço da Saúde.<br />
               Cuidado multidisciplinar com excelência e acolhimento em Florianópolis.
