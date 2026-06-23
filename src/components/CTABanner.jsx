@@ -30,7 +30,7 @@ export default function CTABanner() {
           Estamos prontos para cuidar de você.
         </p>
         <a
-          href="https://wa.me/554830244200?text=Olá! Gostaria de agendar uma consulta na Medcorps."
+          href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta na Medcorps."
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-3 bg-accent text-accent-foreground px-10 py-4 rounded-full text-lg font-medium hover:bg-accent/90 transition-all duration-300 hover:shadow-xl hover:shadow-accent/30"

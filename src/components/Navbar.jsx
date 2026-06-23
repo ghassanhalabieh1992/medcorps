@@ -64,14 +64,14 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+554830244200"
+              href="tel:+5548999260111"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Phone className="w-4 h-4" />
-              (48) 3024-4200
+              (48) 99926-0111
             </a>
             <a
-              href="https://wa.me/554830244200?text=Olá! Gostaria de agendar uma consulta."
+              href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
@@ -111,7 +111,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://wa.me/554830244200?text=Olá! Gostaria de agendar uma consulta."
+                href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-full text-center text-sm font-medium mt-2"

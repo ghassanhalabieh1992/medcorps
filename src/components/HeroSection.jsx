@@ -57,7 +57,7 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="https://wa.me/554830244200?text=Olá! Gostaria de agendar uma consulta."
+              href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta."
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium inline-flex items-center gap-3 hover:bg-primary/90 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30"

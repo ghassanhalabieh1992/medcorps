@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function WhatsAppFloat() {
   return (
     <motion.a
-      href="https://wa.me/554830244200?text=Olá! Gostaria de agendar uma consulta na Medcorps."
+      href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta na Medcorps."
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0 }}

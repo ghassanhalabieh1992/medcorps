@@ -56,8 +56,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-heading font-semibold text-foreground mb-1">Telefone</h3>
-                  <a href="tel:+554830244200" className="text-muted-foreground hover:text-primary transition-colors font-body">
-                    (48) 3024-4200
+                  <a href="tel:+5548999260111" className="text-muted-foreground hover:text-primary transition-colors font-body">
+                    (48) 99926-0111
                   </a>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function ContactSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://wa.me/554830244200?text=Olá! Gostaria de agendar uma consulta na Medcorps."
+                href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta na Medcorps."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 bg-primary text-primary-foreground px-6 py-4 rounded-full text-center font-medium hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
