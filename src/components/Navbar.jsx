@@ -34,10 +34,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center">
-            <MedcorpsLogo
-              variant={scrolled ? 'green' : undefined}
-              className="h-14 w-auto"
-            />
+            <MedcorpsLogo className="h-14 w-auto" />
           </a>
 
           {/* Desktop nav */}
