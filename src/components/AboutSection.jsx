@@ -4,8 +4,8 @@ import { Heart, Users, Award, Shield } from 'lucide-react';
 
 const STATS = [
   { icon: Heart, value: 'Multidisciplinar', label: 'Cuidado Integral' },
-  { icon: Users, value: '6+', label: 'Especialidades' },
-  { icon: Award, value: '4.5★', label: 'Avaliação' },
+  { icon: Users, value: '13+', label: 'Especialidades' },
+  { icon: Award, value: '22 Anos', label: 'Experiência' },
   { icon: Shield, value: 'CRM/SC', label: 'Certificada' },
 ];
 
@@ -32,7 +32,7 @@ export default function AboutSection() {
             </div>
             {/* Floating accent card */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-2xl p-6 max-w-[200px]">
-              <p className="text-accent font-heading text-4xl font-semibold">+10</p>
+              <p className="text-accent font-heading text-4xl font-semibold">+22</p>
               <p className="text-muted-foreground text-sm font-body mt-1">Anos cuidando de você em Florianópolis</p>
             </div>
           </motion.div>
@@ -51,15 +51,20 @@ export default function AboutSection() {
               Seu bem-estar é nossa{' '}
               <span className="italic text-primary">prioridade</span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6 font-body">
-              A Clínica Medcorps é um espaço multidisciplinar de saúde localizado no coração de 
-              Florianópolis. Com uma equipe de especialistas dedicados, oferecemos atendimento 
-              humanizado e personalizado em diversas áreas da medicina.
+            <p className="text-muted-foreground text-lg leading-relaxed mb-10 font-body">
+              Buscando oferecer saúde e bem-estar, a clínica Medcorps atua há mais de 22 anos 
+              no Centro de Florianópolis. Com o propósito de oferecer um tratamento para disposição 
+              física e mental dos nossos pacientes, a policlínica desenvolveu uma equipe com 
+              profissionais de diversas áreas, da medicina tradicional a terapias alternativas 
+              e/ou complementares. Dessa forma, nossos clientes encontram um tratamento amplo 
+              em um só lugar.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 font-body">
-              Nossa missão é promover saúde integral, unindo tecnologia de ponta com o cuidado 
-              empático que cada paciente merece. Recentemente reformada, nossa clínica conta 
-              com instalações modernas para proporcionar a melhor experiência.
+              A Clínica Medcorps é uma clínica Multidisciplinar composta por equipes 
+              multiprofissionais de médicos, nutricionistas, fisioterapeutas, psicólogos, 
+              hipnólogo entre outras especialidades que buscam atender o paciente de uma forma 
+              mais humanizada e empática, com o intuito de olhar o paciente de vários ângulos, 
+              ou seja, de uma maneira integrada.
             </p>
 
             {/* Stats */}
