@@ -29,8 +29,8 @@ export default function HeroSection() {
 
               </span>
             </div>
-            <p className="mt-3 text-white/60 text-xs font-body tracking-[0.35em] uppercase">
-              Espaço da Saúde
+            <p className="mt-3 text-white/60 tracking-[0.35em] uppercase text-sm [font-family:'Abril_Fatface',_system-ui]">ESPAÇO DA SAÚDE
+
             </p>
           </motion.div>
 
