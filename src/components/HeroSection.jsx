@@ -25,8 +25,8 @@ export default function HeroSection() {
             
             <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-accent/30 bg-accent/10 backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              <span className="text-accent text-sm font-body tracking-[0.2em] uppercase font-medium">
-                Clínica Medcorps
+              <span className="text-accent tracking-[0.2em] uppercase font-medium text-lg [font-family:'Abril_Fatface',_system-ui]">CLÍNICA MEDCORPS
+
               </span>
             </div>
             <p className="mt-3 text-white/60 text-xs font-body tracking-[0.35em] uppercase">
