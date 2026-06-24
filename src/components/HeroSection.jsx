@@ -21,10 +21,27 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="mb-6"
+          >
+            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-accent/30 bg-accent/10 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              <span className="text-accent text-sm font-body tracking-[0.2em] uppercase font-medium">
+                Clínica Medcorps
+              </span>
+            </div>
+            <p className="mt-3 text-white/60 text-xs font-body tracking-[0.35em] uppercase pl-1">
+              Espaço da Saúde
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             className="flex items-center gap-2 mb-8"
           >
-            <MapPin className="w-4 h-4 text-accent" />
-            <span className="text-white/70 text-sm font-body tracking-wider uppercase">
+            <MapPin className="w-4 h-4 text-white/50" />
+            <span className="text-white/60 text-sm font-body tracking-wider uppercase">
               Florianópolis · Santa Catarina
             </span>
           </motion.div>
