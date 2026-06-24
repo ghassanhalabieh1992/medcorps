@@ -68,10 +68,10 @@ export default function TeamSection() {
                   </p>
                 </div>
               </div>
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-2">
+              <h3 className="text-xl font-heading font-semibold text-foreground mb-2 text-center">
                 {member.name}
               </h3>
-              <p className="text-muted-foreground text-[15px] font-body leading-relaxed">
+              <p className="text-muted-foreground text-[15px] font-body leading-relaxed text-center">
                 {member.description}
               </p>
             </motion.div>

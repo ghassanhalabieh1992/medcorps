@@ -43,6 +43,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="text-center"
           >
             <span className="text-primary text-sm font-medium tracking-widest uppercase font-body">
               Sobre a Medcorps
@@ -68,10 +69,10 @@ export default function AboutSection() {
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6 max-w-lg mx-auto">
               {STATS.map(({ icon: Icon, value, label }) => (
-                <div key={label} className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                <div key={label} className="flex flex-col items-center text-center gap-2">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
