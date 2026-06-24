@@ -61,7 +61,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-lg md:text-xl text-white/70 font-body font-light leading-relaxed mb-10 max-w-lg">
+            className="text-lg md:text-xl text-white/70 font-body font-light leading-relaxed mb-10 max-w-lg mx-auto">
             
             Cuidado multidisciplinar com excelência e acolhimento. 
             Uma equipe dedicada à sua saúde integral em Florianópolis.
