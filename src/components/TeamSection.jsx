@@ -5,7 +5,7 @@ const TEAM = [
   {
     name: 'Dra. Manuela Rodrigues Nascimento',
     specialty: 'Endocrinologia e Metabologia',
-    description: 'Especialista com abordagem integrativa e medicina preventiva. Reconhecida pelo atendimento humanizado e escuta ativa.',
+    description: '',
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/8012c94a4_generated_04b495a4.png',
   },
   {
@@ -17,7 +17,7 @@ const TEAM = [
   {
     name: 'Dr. Rômulo Herkenhoff',
     specialty: 'Clínico Geral',
-    description: 'Atendimento pontual e atencioso, com foco na prevenção e diagnóstico preciso de doenças.',
+    description: '',
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/a22bb51c8_generated_f68873d5.png',
   },
 ];
