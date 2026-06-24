@@ -99,13 +99,13 @@ export default function HeroSection() {
         transition={{ delay: 1.2 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         
-        <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center hidden">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-1.5 h-1.5 rounded-full bg-white/60 mt-2" />
-          
-        </div>
+        
+
+
+
+
+
+        
       </motion.div>
     </section>);
 
