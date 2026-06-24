@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const TEAM = [
   {
-    name: 'Dra. Manuela Rodrigues Nascimento',
+    name: '',
     specialty: 'Endocrinologia e Metabologia',
     description: '',
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/8012c94a4_generated_04b495a4.png',
@@ -15,7 +15,7 @@ const TEAM = [
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/08362f2cc_generated_707268dd.png',
   },
   {
-    name: 'Dr. Rômulo Herkenhoff',
+    name: '',
     specialty: 'Clínico Geral',
     description: '',
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/a22bb51c8_generated_f68873d5.png',
@@ -68,9 +68,11 @@ export default function TeamSection() {
                   </p>
                 </div>
               </div>
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-2 text-center">
-                {member.name}
-              </h3>
+              {member.name && (
+                <h3 className="text-xl font-heading font-semibold text-foreground mb-2 text-center">
+                  {member.name}
+                </h3>
+              )}
               <p className="text-muted-foreground text-[15px] font-body leading-relaxed text-center">
                 {member.description}
               </p>
