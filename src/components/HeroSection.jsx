@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#002C3D]/85 via-[#002C3D]/60 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-0 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:pt-28 lg:pb-16 w-full">
         <div className="max-w-2xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
