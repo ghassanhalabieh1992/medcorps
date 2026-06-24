@@ -16,12 +16,12 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-0 w-full">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-6"
+            className="mb-6 text-center"
           >
             <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-accent/30 bg-accent/10 backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
@@ -29,7 +29,7 @@ export default function HeroSection() {
                 Clínica Medcorps
               </span>
             </div>
-            <p className="mt-3 text-white/60 text-xs font-body tracking-[0.35em] uppercase pl-1">
+            <p className="mt-3 text-white/60 text-xs font-body tracking-[0.35em] uppercase">
               Espaço da Saúde
             </p>
           </motion.div>
@@ -38,7 +38,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex items-center gap-2 mb-8"
+            className="flex items-center justify-center gap-2 mb-8"
           >
             <MapPin className="w-4 h-4 text-white/50" />
             <span className="text-white/60 text-sm font-body tracking-wider uppercase">
@@ -71,7 +71,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row justify-center gap-4"
           >
             <a
               href="https://wa.me/5548999260111?text=Olá! Gostaria de agendar uma consulta."
