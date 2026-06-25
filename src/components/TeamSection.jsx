@@ -16,7 +16,7 @@ const TEAM = [
   },
   {
     name: 'Dr. Eduardo Vieira',
-    specialty: 'Psiquiatria · CRM 7150/SC',
+    specialty: 'Psiquiatria · CRM 7150/SC · RQE 3827',
     description: 'Com grande experiência clínica e uma abordagem centrada no paciente, o Dr. Eduardo vê cada indivíduo em sua singularidade, não tratando apenas os sintomas, buscando entender as raízes das questões, colaborando para uma saúde mental adequada e duradoura.',
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/89d4f0002_WhatsAppImage2026-06-25at114041AM.jpg',
   },
