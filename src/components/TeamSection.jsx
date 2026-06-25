@@ -15,10 +15,10 @@ const TEAM = [
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/08362f2cc_generated_707268dd.png',
   },
   {
-    name: '',
-    specialty: 'Clínico Geral',
-    description: '',
-    image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/a22bb51c8_generated_f68873d5.png',
+    name: 'Dr. Eduardo Vieira',
+    specialty: 'Psiquiatria · CRM 7150/SC',
+    description: 'Com grande experiência clínica e uma abordagem centrada no paciente, o Dr. Eduardo vê cada indivíduo em sua singularidade, não tratando apenas os sintomas, buscando entender as raízes das questões, colaborando para uma saúde mental adequada e duradoura.',
+    image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/89d4f0002_WhatsAppImage2026-06-25at114041AM.jpg',
   },
 ];
 
