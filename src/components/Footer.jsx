@@ -22,15 +22,15 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-heading text-lg font-semibold mb-6">Navegação</h4>
             <nav className="flex flex-col gap-3">
-              {['Início', 'Sobre', 'Especialidades', 'Equipe', 'Depoimentos', 'Contato'].map(label => (
-                <a
-                  key={label}
-                  href={`#${label.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`}
-                  className="text-white/50 hover:text-white transition-colors font-body text-sm"
-                >
+              {['Início', 'Sobre', 'Especialidades', 'Equipe', 'Depoimentos', 'Contato'].map((label) =>
+              <a
+                key={label}
+                href={`#${label.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`}
+                className="text-white/50 hover:text-white transition-colors font-body text-sm">
+                
                   {label}
                 </a>
-              ))}
+              )}
             </nav>
           </div>
 
@@ -63,8 +63,8 @@ export default function Footer() {
                   href="https://www.instagram.com/clinicamedcorpsfloripa?igsh=MTlxNGRrZnp5YjhhZA=="
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/50 hover:text-white transition-colors text-sm font-body"
-                >
+                  className="text-white/50 hover:text-white transition-colors text-sm font-body">
+                  
                   @clinicamedcorpsfloripa
                 </a>
               </div>
@@ -77,11 +77,11 @@ export default function Footer() {
           <p className="text-white/30 text-xs font-body">
             © {year} Clínica Medcorps. Todos os direitos reservados.
           </p>
-          <p className="text-white/30 text-xs font-body">
+          <p className="text-white/30 text-xs font-body hidden">
             CRM 7165/SC — Responsável Técnico
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 }
