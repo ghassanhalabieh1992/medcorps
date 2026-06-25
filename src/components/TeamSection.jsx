@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const TEAM = [
   {
     name: 'Dra. Cassia Schlickmann',
-    specialty: 'Dermatologista · CRM 7165/SC',
+    specialty: 'Dermatologista · CRM 7165/SC · RQE 315',
     description: 'Tenho grande experiência em dermatologia! Atuo nas áreas de estética, doenças de pele, cirurgias e câncer de pele. Procuro sempre atender os meus pacientes como um todo, compreendendo os reais motivos que o levaram a me procurar. Atenção, cuidado e muito amor no que faço!',
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/1bcc4772e_WhatsAppImage2026-06-25at114435AM.jpg',
   },
