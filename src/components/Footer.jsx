@@ -77,7 +77,7 @@ export default function Footer() {
           <p className="text-white/30 text-xs font-body">
             © {year} Clínica Medcorps. Todos os direitos reservados.
           </p>
-          <p className="text-white/30 text-xs font-body mx-8 px-2">Dr Eduardo Luchini Vieira 
+          <p className="text-white/30 text-xs font-body mx-8">Dr Eduardo Luchini Vieira 
 CRM/SC 7150 RQE 3827
           </p>
         </div>
