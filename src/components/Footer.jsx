@@ -77,8 +77,8 @@ export default function Footer() {
           <p className="text-white/30 text-xs font-body">
             © {year} Clínica Medcorps. Todos os direitos reservados.
           </p>
-          <p className="text-white/30 text-xs font-body hidden">
-            CRM 7165/SC — Responsável Técnico
+          <p className="text-white/30 text-xs font-body">CRM 7165/SC — Responsável Técnico
+
           </p>
         </div>
       </div>
