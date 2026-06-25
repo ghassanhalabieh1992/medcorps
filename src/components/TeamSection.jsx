@@ -20,6 +20,12 @@ const TEAM = [
     description: 'Com grande experiência clínica e uma abordagem centrada no paciente, o Dr. Eduardo vê cada indivíduo em sua singularidade, não tratando apenas os sintomas, buscando entender as raízes das questões, colaborando para uma saúde mental adequada e duradoura.',
     image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/89d4f0002_WhatsAppImage2026-06-25at114041AM.jpg',
   },
+  {
+    name: 'Dra. Andréa Carneiro',
+    specialty: 'Homeopatia e Ginecologia · CRM SC 34445 · RQE 23051 & 23165',
+    description: 'Homeopatia na saúde da mulher. Atuação integrativa unindo homeopatia e ginecologia para um cuidado completo e individualizado.',
+    image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/f06a63a3d_WhatsAppImage2026-06-25at114956AM.jpg',
+  },
 ];
 
 export default function TeamSection() {
