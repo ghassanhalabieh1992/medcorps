@@ -125,7 +125,7 @@ export default function ContactSection() {
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '400px' }}
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Localização Clínica Medcorps"
