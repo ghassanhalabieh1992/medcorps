@@ -6,25 +6,25 @@ const TEAM = [
     name: 'Dra. Cassia Schlickmann',
     specialty: 'Dermatologista · CRM 7165/SC · RQE 315',
     description: 'Tenho grande experiência em dermatologia! Atuo nas áreas de estética, doenças de pele, cirurgias e câncer de pele. Procuro sempre atender os meus pacientes como um todo, compreendendo os reais motivos que o levaram a me procurar. Atenção, cuidado e muito amor no que faço!',
-    image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/1bcc4772e_WhatsAppImage2026-06-25at114435AM.jpg',
+    image: '/images/team-1.jpg',
   },
   {
     name: 'Dra. Gisela Traut Kirst',
     specialty: 'Ginecologia e Obstetrícia',
     description: 'Profissional dedicada à saúde feminina com mais de uma década de experiência em acompanhamento gestacional.',
-    image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/08362f2cc_generated_707268dd.png',
+    image: '/images/team-2.png',
   },
   {
     name: 'Dr. Eduardo Vieira',
     specialty: 'Psiquiatria · CRM 7150/SC · RQE 3827',
     description: 'Com grande experiência clínica e uma abordagem centrada no paciente, o Dr. Eduardo vê cada indivíduo em sua singularidade, não tratando apenas os sintomas, buscando entender as raízes das questões, colaborando para uma saúde mental adequada e duradoura.',
-    image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/89d4f0002_WhatsAppImage2026-06-25at114041AM.jpg',
+    image: '/images/team-3.jpg',
   },
   {
     name: 'Dra. Andréa Carneiro',
     specialty: 'Homeopatia e Ginecologia · CRM SC 34445 · RQE 23051 & 23165',
     description: 'Homeopatia na saúde da mulher. Atuação integrativa unindo homeopatia e ginecologia para um cuidado completo e individualizado.',
-    image: 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/f06a63a3d_WhatsAppImage2026-06-25at114956AM.jpg',
+    image: '/images/team-4.jpg',
   },
 ];
 

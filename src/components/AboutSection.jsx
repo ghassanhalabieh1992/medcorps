@@ -24,7 +24,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-3xl overflow-hidden">
               <img
-                src="https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/ad6027030_generated_8e590d4e.png"
+                src="/images/about.png"
                 alt="Consulta médica na Medcorps"
                 className="w-full aspect-[4/3] object-cover"
               />

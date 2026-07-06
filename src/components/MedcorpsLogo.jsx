@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LOGO_URL = 'https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/1024c77f2_.png';
+const LOGO_URL = '/images/logo.png';
 
 export default function MedcorpsLogo({ className = '' }) {
   return (

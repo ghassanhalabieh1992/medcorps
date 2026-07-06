@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/6a2feb0cde2056469cbfde93/79cdcef76_generated_c2aeb314.png"
+          src="/images/hero.png"
           alt="Interior da Clínica Medcorps"
           className="w-full h-full object-cover" />
         
