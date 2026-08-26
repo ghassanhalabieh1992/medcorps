@@ -33,6 +33,10 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="space-y-6"
           >
+            <div className="rounded-3xl overflow-hidden aspect-[4/3] shadow-xl shadow-primary/5">
+              <img src="/images/contact-bg.jpg" alt="Recepção da Clínica Medcorps" className="w-full h-full object-cover" />
+            </div>
+
             <div className="bg-white rounded-3xl p-8 border border-border/50">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">

@@ -2,9 +2,11 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
+import FacilitySection from '@/components/FacilitySection';
 import SpecialtiesSection from '@/components/SpecialtiesSection';
 import TeamSection from '@/components/TeamSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import PricingSection from '@/components/PricingSection';
 import CTABanner from '@/components/CTABanner';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -16,9 +18,11 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <FacilitySection />
       <SpecialtiesSection />
       <TeamSection />
       <TestimonialsSection />
+      <PricingSection />
       <CTABanner />
       <ContactSection />
       <Footer />

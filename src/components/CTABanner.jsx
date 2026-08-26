@@ -7,7 +7,7 @@ export default function CTABanner() {
     <section className="relative py-24 lg:py-32 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/images/cta-banner.png"
+          src="/images/cta-banner.jpg"
           alt="Florianópolis"
           className="w-full h-full object-cover"
         />

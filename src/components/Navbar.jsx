@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: 'Especialidades', href: '#especialidades' },
   { label: 'Equipe', href: '#equipe' },
   { label: 'Depoimentos', href: '#depoimentos' },
+  { label: 'Valores', href: '#valores' },
   { label: 'Contato', href: '#contato' },
 ];
 

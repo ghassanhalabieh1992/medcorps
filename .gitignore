@@ -30,3 +30,6 @@ dist-ssr
 .env
 .vite
 .vercel
+
+# Raw photoshoot source files (not used directly by the site)
+public/images/Medcorps _ Arquitetônico + retratos/

@@ -12,13 +12,14 @@ const TEAM = [
     name: 'Dra. Gisela Traut Kirst',
     specialty: 'Ginecologia e Obstetrícia',
     description: 'Profissional dedicada à saúde feminina com mais de uma década de experiência em acompanhamento gestacional.',
-    image: '/images/team-2.png',
+    image: '/images/gisela-kirst.jpg',
   },
   {
     name: 'Dr. Eduardo Vieira',
+    credential: 'Pós-graduado',
     specialty: 'Psiquiatria · CRM 7150/SC · RQE 3827',
-    description: 'Com grande experiência clínica e uma abordagem centrada no paciente, o Dr. Eduardo vê cada indivíduo em sua singularidade, não tratando apenas os sintomas, buscando entender as raízes das questões, colaborando para uma saúde mental adequada e duradoura.',
-    image: '/images/team-3.jpg',
+    description: 'Com grande experiência clínica, uma abordagem centrada no paciente, o Dr. Eduardo vê cada indivíduo em sua singularidade, não tratando apenas os sintomas, buscando entender as raízes das questões, colaborando para uma saúde mental adequada e duradoura.',
+    image: '/images/eduardo-vieira.jpg',
   },
   {
     name: 'Dra. Andréa Carneiro',
@@ -32,24 +33,36 @@ export default function TeamSection() {
   return (
     <section id="equipe" className="scroll-mt-20 py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <span className="text-primary text-sm font-medium tracking-widest uppercase font-body">
-            Nossa Equipe
-          </span>
-          <h2 className="text-3xl md:text-5xl font-heading font-medium text-foreground mt-4 mb-6">
-            Profissionais que <span className="italic text-primary">acolhem</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            Conheça os especialistas que fazem da Medcorps uma referência em 
-            cuidado humanizado em Florianópolis.
-          </p>
-        </motion.div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center lg:text-left"
+          >
+            <span className="text-primary text-sm font-medium tracking-widest uppercase font-body">
+              Nossa Equipe
+            </span>
+            <h2 className="text-3xl md:text-5xl font-heading font-medium text-foreground mt-4 mb-6">
+              Profissionais que <span className="italic text-primary">acolhem</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto lg:mx-0 font-body">
+              Conheça os especialistas que fazem da Medcorps uma referência em
+              cuidado humanizado em Florianópolis.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="rounded-3xl overflow-hidden aspect-[4/3] shadow-xl shadow-primary/5"
+          >
+            <img src="/images/team-bg.jpg" alt="Consultório da equipe médica Medcorps" className="w-full h-full object-cover" />
+          </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {TEAM.map((member, index) => (
@@ -65,7 +78,7 @@ export default function TeamSection() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#002C3D]/60 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -75,9 +88,14 @@ export default function TeamSection() {
                 </div>
               </div>
               {member.name && (
-                <h3 className="text-xl font-heading font-semibold text-foreground mb-2 text-center">
+                <h3 className="text-xl font-heading font-semibold text-foreground text-center mb-1">
                   {member.name}
                 </h3>
+              )}
+              {member.credential && (
+                <p className="text-muted-foreground text-sm font-body text-center mb-1">
+                  {member.credential}
+                </p>
               )}
               <p className="text-muted-foreground text-[15px] font-body leading-relaxed text-center">
                 {member.description}

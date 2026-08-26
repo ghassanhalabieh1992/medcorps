@@ -76,24 +76,36 @@ export default function SpecialtiesSection() {
   return (
     <section id="especialidades" className="scroll-mt-20 py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <span className="text-primary text-sm font-medium tracking-widest uppercase font-body">
-            Especialidades
-          </span>
-          <h2 className="text-3xl md:text-5xl font-heading font-medium text-foreground mt-4 mb-6">
-            Cuidado <span className="italic text-primary">multidisciplinar</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            Nossa clínica reúne diversas especialidades para oferecer um atendimento 
-            completo e integrado à sua saúde.
-          </p>
-        </motion.div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center lg:text-left"
+          >
+            <span className="text-primary text-sm font-medium tracking-widest uppercase font-body">
+              Especialidades
+            </span>
+            <h2 className="text-3xl md:text-5xl font-heading font-medium text-foreground mt-4 mb-6">
+              Cuidado <span className="italic text-primary">multidisciplinar</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto lg:mx-0 font-body">
+              Nossa clínica reúne diversas especialidades para oferecer um atendimento
+              completo e integrado à sua saúde.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="rounded-3xl overflow-hidden aspect-[4/3] shadow-xl shadow-primary/5"
+          >
+            <img src="/images/specialties-bg.jpg" alt="Terapias complementares na Medcorps" className="w-full h-full object-cover" />
+          </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SPECIALTIES.map((spec, index) => (

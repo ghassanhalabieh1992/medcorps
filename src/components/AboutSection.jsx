@@ -22,13 +22,17 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden">
-              <img
-                src="/images/about.png"
-                alt="Consulta médica na Medcorps"
-                className="w-full aspect-[4/3] object-cover"
+            <div className="relative rounded-3xl overflow-hidden max-w-sm mx-auto">
+              <video
+                src="/images/about-video.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                className="w-full aspect-[9/16] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#002C3D]/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#002C3D]/20 to-transparent pointer-events-none" />
             </div>
             {/* Floating accent card */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-2xl p-6 max-w-[200px]">

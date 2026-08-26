@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero.png"
+          src="/images/hero-2.jpg"
           alt="Interior da Clínica Medcorps"
           className="w-full h-full object-cover" />
         

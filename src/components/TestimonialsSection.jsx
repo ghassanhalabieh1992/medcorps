@@ -61,7 +61,17 @@ export default function TestimonialsSection() {
           </h2>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="rounded-3xl overflow-hidden aspect-[4/3] shadow-xl shadow-primary/5 hidden lg:block"
+          >
+            <img src="/images/testimonials-bg.jpg" alt="Ambiente de atendimento na Medcorps" className="w-full h-full object-cover" />
+          </motion.div>
+
           <div className="relative bg-background rounded-3xl p-8 md:p-12 lg:p-16 min-h-[320px] flex flex-col justify-center">
             <Quote className="w-12 h-12 text-primary/15 absolute top-8 left-8 md:top-12 md:left-12" />
 
