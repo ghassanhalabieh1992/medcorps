@@ -3,20 +3,14 @@ import { motion } from 'framer-motion';
 
 const TEAM = [
   {
-    name: 'Dra. Cassia Schlickmann',
-    specialty: 'Dermatologista · CRM 7165/SC · RQE 315',
-    description: 'Tenho grande experiência em dermatologia! Atuo nas áreas de estética, doenças de pele, cirurgias e câncer de pele. Procuro sempre atender os meus pacientes como um todo, compreendendo os reais motivos que o levaram a me procurar. Atenção, cuidado e muito amor no que faço!',
-    image: '/images/team-1.jpg',
-  },
-  {
     name: 'Dra. Gisela Traut Kirst',
     specialty: 'Ginecologia e Obstetrícia',
     description: 'Profissional dedicada à saúde feminina com mais de uma década de experiência em acompanhamento gestacional.',
     image: '/images/gisela-kirst.jpg',
   },
   {
-    name: 'Dr. Eduardo Vieira',
-    credential: 'Pós-graduado',
+    name: 'Dr. Eduardo Luchini',
+    credential: 'Pós graduado em Psiquiatria',
     specialty: 'Psiquiatria · CRM 7150/SC · RQE 3827',
     description: 'Com grande experiência clínica, uma abordagem centrada no paciente, o Dr. Eduardo vê cada indivíduo em sua singularidade, não tratando apenas os sintomas, buscando entender as raízes das questões, colaborando para uma saúde mental adequada e duradoura.',
     image: '/images/eduardo-vieira.jpg',
@@ -26,6 +20,18 @@ const TEAM = [
     specialty: 'Homeopatia e Ginecologia · CRM SC 34445 · RQE 23051 & 23165',
     description: 'Homeopatia na saúde da mulher. Atuação integrativa unindo homeopatia e ginecologia para um cuidado completo e individualizado.',
     image: '/images/team-4.jpg',
+  },
+  {
+    name: 'Dra. Carolina Duarte',
+    specialty: 'Dermatologia · CRM/SC 32750 · RQE 26040',
+    description: 'Especialista em saúde da pele, investiga as causas por trás de cada caso de acne e oferece acompanhamento personalizado, cuidando não só da pele, mas também da autoestima da paciente.',
+    image: '/images/carolina-duarte.jpg',
+  },
+  {
+    name: 'Dra. Maria Tereza Feroldi',
+    specialty: 'Dermatologia',
+    description: 'Médica dermatologista dedicada ao cuidado da saúde da pele, unindo tratamentos dermatológicos e procedimentos estéticos a um acompanhamento médico próximo e individualizado.',
+    image: '/images/maria-feroldi.jpg',
   },
 ];
 

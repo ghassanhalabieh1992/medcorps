@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-heading text-lg font-semibold mb-6">Navegação</h4>
             <nav className="flex flex-col gap-3">
-              {['Início', 'Sobre', 'Especialidades', 'Equipe', 'Depoimentos', 'Valores', 'Contato'].map((label) =>
+              {['Início', 'Sobre', 'Especialidades', 'Equipe', 'Depoimentos', 'Contato'].map((label) =>
               <a
                 key={label}
                 href={`#${label.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`}
